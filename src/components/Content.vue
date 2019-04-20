@@ -7,26 +7,22 @@
         :article="article"
       />
     </div>
-    <template name='ArticlesFooter'>
-      <img
-        v-if='isLoading'
-        src='../assets/loading.gif'
-      />
-      <button
-        v-else
-        @click="getArticles()"
-      >Next</button>
-    </template>
+    <ArticlesFooter
+      :isLoading="this.isLoading"
+      :getArticles="this.getArticles"
+    />
   </div>
 </template>
 
 <script>
 import Article from './Article.vue';
+import ArticlesFooter from './ArticlesFooter.vue'
 
 export default {
   name: 'Content',
   components: {
-    Article
+    Article,
+    ArticlesFooter
   },
   data() {
     return {
@@ -52,7 +48,6 @@ export default {
           this.page += 1;
         })
         .catch(error => console.log(error))
-          
     }
   },
   beforeMount() {
