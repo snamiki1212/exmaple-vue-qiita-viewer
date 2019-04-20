@@ -1,13 +1,23 @@
 <template>
   <div class="content">
-    <p>here is content</p>
-    <p>{{ getArticles() }}</p>
+    <Article
+      v-for="article in articles"
+      :key="article.id"
+      :article="article"
+    />
+
+      {{ getArticles() }}
   </div>
 </template>
 
 <script>
+import Article from './Article.vue';
+
 export default {
   name: 'Content',
+  components: {
+    Article
+  },
   data() {
     return {
       articles: [],
