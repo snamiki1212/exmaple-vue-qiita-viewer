@@ -17,6 +17,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .header {
+  display: flex;
+  justify-content: space-around;
+
   height: 20px;
   background-color: #55c500;
   color: white;
