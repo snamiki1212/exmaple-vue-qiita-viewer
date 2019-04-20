@@ -37,16 +37,17 @@ export default {
       this.isLoading = true;
 
       const url = 'https://qiita.com/api/v2/items';
-      const full_url = `${url}?page=${this.page}`
+      const full_url = `${url}?page=${this.page}`;
 
       fetch(full_url)
         .then(r => r.json())
         .then(json => {
-          this.articles.push.apply(this.articles, json)
+          this.articles.push.apply(this.articles, json);
           this.isLoading = false;
           this.page += 1;
         })
-        .catch(error => console.log(error))
+        // eslint-disable-next-line
+        .catch(error => console.dir(error))
     }
   },
   beforeMount() {
