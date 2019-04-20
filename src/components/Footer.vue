@@ -17,4 +17,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.footer{
+  background-color: #55c500;
+  color: white;
+  text-align: right;
+}
 </style>

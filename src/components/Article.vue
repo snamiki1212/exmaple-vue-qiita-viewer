@@ -20,6 +20,13 @@ export default {
   flex-direction: row;
 
   width: 50%;
+  color: #55c500;
+  transition: 0.5s;
+}
+.article:hover{
+  transition: 0.5s;
+  color: white;
+  background-color: #55c500;
 }
 .avator{
   height: 50px;
