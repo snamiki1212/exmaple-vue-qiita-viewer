@@ -36,13 +36,11 @@ export default {
       if(this.isLoading) return;
       this.isLoading = true;
 
-      // const url = 'https://qiita.com/api/v2/items';
-      const url = 'https://jsondata.okiba.me/v1/json/m5nKD190420072904';
+      const url = 'https://qiita.com/api/v2/items';
       const full_url = `${url}?page=${this.page}`
 
       fetch(full_url)
         .then(r => r.json())
-        // .then(json => {console.log('json',json); console.log('articles', this.articles); [].push.apply(this.articles, json)});
         .then(json => {
           this.articles.push.apply(this.articles, json)
           this.isLoading = false;
@@ -55,7 +53,6 @@ export default {
     this.getArticles();
   },
 }
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
