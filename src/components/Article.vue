@@ -18,10 +18,16 @@ export default {
 .article{
   display: flex;
   flex-direction: row;
+  align-items: center;
 
-  width: 50%;
+  width: 45%;
+  border: solid 1px #55c50022;
+  border-radius: 5px;
   color: #55c500;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
   transition: 0.5s;
+  padding: 10px;
+  margin: 5px;
 }
 .article:hover{
   transition: 0.5s;
@@ -29,6 +35,7 @@ export default {
   background-color: #55c500;
 }
 .avator{
+  border-radius: 50%;
   height: 50px;
   width: 50px;
 }

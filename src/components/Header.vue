@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <span>Qiita Viewer with Vue</span>
+    <span class='title'>Qiita Viewer with Vue</span>
     <a href='https://github.com/snamiki1212/qiita-viewer-with-vue'>Github</a>
   </div>
 </template>
@@ -19,9 +19,14 @@ export default {
 .header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
-  height: 20px;
+  height: 40px;
   background-color: #55c500;
   color: white;
+}
+
+.title{
+  font-size: 20px;
 }
 </style>

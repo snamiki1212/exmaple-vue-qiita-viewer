@@ -46,6 +46,7 @@ export default {
 }
 .next-button:hover{
   cursor: pointer;
+  background-color: #55c50022;
 }
 
 </style>
