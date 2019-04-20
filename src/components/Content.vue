@@ -36,10 +36,11 @@ export default {
       if(this.isLoading) return;
       this.isLoading = true;
 
-      // const url = 'https://qiita.com/api/v2/items'
-      // const url = 'https://jsondata.okiba.me/v1/json/IANx7190420070753';
+      // const url = 'https://qiita.com/api/v2/items';
       const url = 'https://jsondata.okiba.me/v1/json/m5nKD190420072904';
-      fetch(url)
+      const full_url = `${url}?page=${this.page}`
+
+      fetch(full_url)
         .then(r => r.json())
         // .then(json => {console.log('json',json); console.log('articles', this.articles); [].push.apply(this.articles, json)});
         .then(json => {

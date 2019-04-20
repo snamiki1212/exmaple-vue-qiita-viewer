@@ -18,6 +18,7 @@ export default {
 <style scoped>
 .header {
   height: 20px;
-  background-color: red;
+  background-color: #55c500;
+  color: white;
 }
 </style>
