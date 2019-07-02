@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: 'qiita-viewer-with-vue',
+  publicPath: 'exmaple-vue-qiita-viewer',
   outputDir: 'docs'
 }
